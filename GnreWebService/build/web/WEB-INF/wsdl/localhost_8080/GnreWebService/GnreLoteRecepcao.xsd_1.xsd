@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://www.gnre.pe.gov.br" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://www.gnre.pe.gov.br">
+
+<xs:element name="TRetLote_GNRE">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ambiente" type="xs:string" />
+<xs:element name="situacaoRecepcao">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" />
+<xs:element name="descricao" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="recibo" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="numero" type="xs:string" />
+<xs:element name="dataHoraRecibo" type="xs:string" />
+<xs:element name="tempoEstimadoProc" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="processar" type="tns:processar" />
+
+<xs:element name="processarResponse" type="tns:processarResponse" />
+
+<xs:element name="processarSimples" type="tns:processarSimples" />
+
+<xs:element name="processarSimplesObj" type="tns:processarSimplesObj" />
+
+<xs:element name="processarSimplesObjResponse" type="tns:processarSimplesObjResponse" />
+
+<xs:element name="processarSimplesResponse" type="tns:processarSimplesResponse" />
+
+<xs:complexType name="processarSimples">
+<xs:sequence>
+<xs:element name="gnreDadosMsg" type="xs:anyType" form="unqualified" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="processarSimplesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" form="unqualified" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="processar">
+<xs:sequence>
+<xs:element name="gnreDadosMsg" type="xs:anyType" form="unqualified" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="processarResponse">
+<xs:sequence>
+<xs:element name="return" form="unqualified" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ambiente" type="xs:string" />
+<xs:element name="situacaoRecepcao">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" />
+<xs:element name="descricao" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="recibo" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="numero" type="xs:string" />
+<xs:element name="dataHoraRecibo" type="xs:string" />
+<xs:element name="tempoEstimadoProc" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="processarSimplesObj">
+<xs:sequence>
+<xs:element name="envioLote" type="xs:anyType" form="unqualified" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="processarSimplesObjResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" form="unqualified" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

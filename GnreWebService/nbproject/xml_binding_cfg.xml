@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='GnreWebService' version='1.0'>
+	<schema type='-xmlschema' package='' name='TLote_GNRE'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='src/conf/xml-resources/jaxb/TLote_GNRE/lote_gnre_v1.00.xsd' origLocation='../../Downloads/Manual de Integracao_Contribuintes_GNRE_v1-1.6 (1)/lote_gnre_v1.00.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+	<schema type='-xmlschema' package='' name='TRetLote_GNRE'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='src/conf/xml-resources/jaxb/TRetLote_GNRE/lote_gnre_recibo_v1.00.xsd' origLocation='../../Downloads/Manual de Integracao_Contribuintes_GNRE_v1-1.6 (1)/lote_gnre_recibo_v1.00.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+	<schema type='-xmlschema' package='' name='LoteResultado'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='src/conf/xml-resources/jaxb/LoteResultado/lote_gnre_result_v1.00.xsd' origLocation='../../Downloads/Manual de Integracao_Contribuintes_GNRE_v1-1.6 (1)/lote_gnre_result_v1.00.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+</schemas>

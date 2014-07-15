@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="GnreConfigUF">
+      <implementation-class>br.com.intercomex.ws.GnreConfigUF</implementation-class>
+    </service>
+    <service name="GnreResultadoLote">
+      <implementation-class>br.com.intercomex.ws.GnreResultadoLote</implementation-class>
+    </service>
+    <service name="EnviarLoteService">
+      <implementation-class>br.com.intercomex.ws.EnviarLoteService</implementation-class>
+    </service>
+    <service name="GnreLoteRecepcao">
+      <implementation-class>br.com.intercomex.ws.GnreLoteRecepcao</implementation-class>
+    </service>
+  </services>
+  <clients>
+  </clients>
+  <jsr109>false</jsr109>
+</jax-ws>

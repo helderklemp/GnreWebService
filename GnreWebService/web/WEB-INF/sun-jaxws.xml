@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="br.com.intercomex.ws.GnreConfigUF" name="GnreConfigUF" url-pattern="/GnreConfigUF"/>
+  <endpoint implementation="br.com.intercomex.ws.GnreResultadoLote" name="GnreResultadoLote" url-pattern="/GnreResultadoLote"/>
+  <endpoint implementation="br.com.intercomex.ws.EnviarLoteService" name="EnviarLoteService" url-pattern="/EnviarLoteService"/>
+  <endpoint implementation="br.com.intercomex.ws.GnreLoteRecepcao" name="GnreLoteRecepcao" url-pattern="/GnreLoteRecepcao"/>
+</endpoints>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+            *** GENERATED FROM xml_binding_cfg.xml - DO NOT EDIT  ***
+            *** Configure thru JAXB Wizard.                       ***
+        --><project name="GnreWebService_jaxb" default="default" basedir=".">
+    <target name="xjc-typedef-target" depends="-init-project">
+        <typedef classname="com.sun.tools.xjc.XJCTask" name="xjc" xmlns:s="http://xml.netbeans.org/schema/JAXBWizConfig">
+            <classpath path="${jaxbwiz.xjcdef.classpath}"/>
+        </typedef>
+    </target>
+    <target name="jaxb-clean-code-generation" depends="clean,jaxb-code-generation"/>
+    <target name="jaxb-code-generation" depends="xjc-typedef-target,-do-init,-init-macrodef-javac">
+        <mkdir dir="${build.generated.sources.dir}/jaxb" xmlns:s="http://xml.netbeans.org/schema/JAXBWizConfig"/>
+        <mkdir dir="build/generated/jaxbCache" xmlns:s="http://xml.netbeans.org/schema/JAXBWizConfig"/>
+        <mkdir dir="build/generated/jaxbCache/TLote_GNRE"/>
+        <xjc destdir="build/generated/jaxbCache/TLote_GNRE" catalog="catalog.xml">
+            <classpath>
+                <pathelement location="${src.dir}"/>
+                <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
+            </classpath>
+            <arg value="-xmlschema"/>
+            <schema file="src/conf/xml-resources/jaxb/TLote_GNRE/lote_gnre_v1.00.xsd"/>
+            <depends file="src/conf/xml-resources/jaxb/TLote_GNRE/lote_gnre_v1.00.xsd"/>
+            <produces dir="build/generated/jaxbCache/TLote_GNRE"/>
+        </xjc>
+        <copy todir="${build.generated.sources.dir}/jaxb">
+            <fileset dir="build/generated/jaxbCache/TLote_GNRE"/>
+        </copy>
+        <mkdir dir="build/generated/jaxbCache/TRetLote_GNRE"/>
+        <xjc destdir="build/generated/jaxbCache/TRetLote_GNRE" catalog="catalog.xml">
+            <classpath>
+                <pathelement location="${src.dir}"/>
+                <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
+            </classpath>
+            <arg value="-xmlschema"/>
+            <schema file="src/conf/xml-resources/jaxb/TRetLote_GNRE/lote_gnre_recibo_v1.00.xsd"/>
+            <depends file="src/conf/xml-resources/jaxb/TRetLote_GNRE/lote_gnre_recibo_v1.00.xsd"/>
+            <produces dir="build/generated/jaxbCache/TRetLote_GNRE"/>
+        </xjc>
+        <copy todir="${build.generated.sources.dir}/jaxb">
+            <fileset dir="build/generated/jaxbCache/TRetLote_GNRE"/>
+        </copy>
+        <mkdir dir="build/generated/jaxbCache/LoteResultado"/>
+        <xjc destdir="build/generated/jaxbCache/LoteResultado" catalog="catalog.xml">
+            <classpath>
+                <pathelement location="${src.dir}"/>
+                <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
+            </classpath>
+            <arg value="-xmlschema"/>
+            <schema file="src/conf/xml-resources/jaxb/LoteResultado/lote_gnre_result_v1.00.xsd"/>
+            <depends file="src/conf/xml-resources/jaxb/LoteResultado/lote_gnre_result_v1.00.xsd"/>
+            <produces dir="build/generated/jaxbCache/LoteResultado"/>
+        </xjc>
+        <copy todir="${build.generated.sources.dir}/jaxb">
+            <fileset dir="build/generated/jaxbCache/LoteResultado"/>
+        </copy>
+        <!--*** Web project javac macro does not support sourcepath attribute, so do not pass "sourcepath=${src.dir}"-->
+    </target>
+</project>

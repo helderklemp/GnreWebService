@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/Users/helderklemp/NetBeansProjects/GnreWebService/../../Downloads/Manual%20de%20Integracao_Contribuintes_GNRE_v1-1.6%20(1)/lote_gnre_v1.00.xsd" uri="src/conf/xml-resources/jaxb/TLote_GNRE/lote_gnre_v1.00.xsd"/>
+    <system systemId="file:/Users/helderklemp/NetBeansProjects/GnreWebService/../../Downloads/Manual%20de%20Integracao_Contribuintes_GNRE_v1-1.6%20(1)/lote_gnre_recibo_v1.00.xsd" uri="src/conf/xml-resources/jaxb/TRetLote_GNRE/lote_gnre_recibo_v1.00.xsd"/>
+    <system systemId="file:/Users/helderklemp/Downloads/Manual%20de%20Integracao_Contribuintes_GNRE_v1-1.6%20(1)/tiposBasicoGNRE_v1.00.xsd" uri="src/conf/xml-resources/jaxb/TRetLote_GNRE/tiposBasicoGNRE_v1.00.xsd"/>
+    <system systemId="file:/Users/helderklemp/NetBeansProjects/GnreWebService/../../Downloads/Manual%20de%20Integracao_Contribuintes_GNRE_v1-1.6%20(1)/lote_gnre_result_v1.00.xsd" uri="src/conf/xml-resources/jaxb/LoteResultado/lote_gnre_result_v1.00.xsd"/>
+    <system systemId="http://localhost:8080/GnreWebService/GnreLoteRecepcao?wsdl" uri="src/conf/xml-resources/web-service-references/GnreLoteRecepcao/wsdl/localhost_8080/GnreWebService/GnreLoteRecepcao.wsdl"/>
+    <system systemId="http://localhost:8080/GnreWebService/GnreLoteRecepcao?xsd=1" uri="src/conf/xml-resources/web-service-references/GnreLoteRecepcao/wsdl/localhost_8080/GnreWebService/GnreLoteRecepcao.xsd_1.xsd"/>
+</catalog>
